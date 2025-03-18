@@ -1,0 +1,177 @@
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c9c9c9;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+}
+
+.app {
+    background: #f3f4f8;
+    max-width: 400px;
+    width: 400px;
+    height: 100vh;
+    overflow: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    justify-content: space-between;
+    margin: 20px 16px;
+}
+
+.logo {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    height: 56px;
+    width: 68px;
+}
+
+.logo-subtext {
+    color: #000;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 18px;
+}
+
+.logo-text {
+    color: #000000;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 34px;
+}
+
+.logo-image {
+    width: 56px;
+    height: 56px;
+}
+
+.logo-image img {
+    width: 100%;
+}
+
+.header {
+    padding: 16px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+}
+
+.header-m {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.main-menu {
+    padding: 16px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.col-12 {
+    width: 100%;
+    flex: 1 0 0%;
+    padding: 0 8px 8px 0;
+}
+
+.col-6 {
+    width: 50%;
+    flex: 1 0 0%;
+    padding: 0 8px 8px 0;
+}
+
+.button {
+    align-items: center;
+    background: #0166ff;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 400;
+    gap: 8px;
+    height: 60px;
+    justify-content: center;
+    line-height: 24px;
+    text-decoration: none;
+    width: 100%;
+    padding: 8px;
+}
+
+.button-m {
+    height: 52px;
+}
+
+.button span {
+    flex: 0;
+}
+
+.button:hover {
+    background: #1062df;
+    transition: all 0.5s ease;
+}
+
+.programms-menu {
+    padding: 16px;
+}
+
+.programms-menu-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0 0 16px 0;
+}
+
+.programm-card {
+    background-color: #fff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.programm-card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0;
+}
+
+.programm-card-subtext {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.programm-card-subtext:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.programm-card-price {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0;
+}
