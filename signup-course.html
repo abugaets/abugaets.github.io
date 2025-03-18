@@ -3,28 +3,34 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style.css?v=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
             rel="stylesheet"
         />
-        <title>Document</title>
+        <title>Дополнительное профессиональное образование</title>
     </head>
     <body>
         <div class="app">
             <header>
-                <div class="logo">
-                    <div class="logo-subtext">education</div>
-                    <div class="logo-text">GO</div>
-                </div>
-                <div class="logo-image">
-                    <img src="/assets/ph_finn-the-human-light.svg" alt="logo" />
+                <div class="nav">
+                    <a href="index.html">
+                        <div class="nav-back">
+                            <img src="/assets/mingcute_arrow-up-line.svg" alt="" />
+                        </div>
+                    </a>
                 </div>
             </header>
-            <div class="header header-m">
-                <span>Запишитесь на курс “Дополнительное образование”</span>
+            <div class="form">
+                <span class="form-header">Запишитесь на курс “Дополнительное образование”</span>
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Фамилия">
+                <input type="text" placeholder="Мобильный телефон">
+                <input type="email" placeholder="Email">
+                <a href="payment.html" class="button button-m">Оплатить курс</a>
+                <span class="auth-subtitle">Нажимая кнопку, принимаю условия политики и пользовательского соглашения</span>
             </div>
         </div>
     </body>

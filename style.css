@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: 1px solid gray;
+}
+
 body {
     background-color: #c9c9c9;
     display: flex;
@@ -229,20 +233,38 @@ header {
     color: rgba(255, 255, 255, 1);
 }
 
+.form,
 .auth {
     display: flex;
     flex-direction: column;
+    gap: 16px;
     height: calc(100vh - 112px);
     justify-content: center;
     padding: 16px;
-    gap: 16px;
 }
 
+.form-header,
 .auth-header {
     font-weight: 600;
     font-size: 30px;
-    line-height: 48px;
+    line-height: 32px;
     text-align: center;
+}
+
+.form-header {
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.form-subtitle {
+    text-align: center;
+}
+
+.form-subtitle span {
+    color: rgba(74, 81, 97, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
 }
 
 .auth-subtitle {
@@ -267,3 +289,52 @@ input {
     padding-top: 8px;
 }
 
+input:focus {
+    outline: none;
+}
+
+.price-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-options-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.payment-options {
+    padding: 0;
+    margin: 0;
+}
+
+.price-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(74, 81, 97, 0.6);
+}
+
+.payment-options li {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.payment-options li img {
+    max-height: 30px;
+}
+
+.payment-options li span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
