@@ -150,6 +150,7 @@ header {
 }
 
 .card,
+.schedule-card,
 .programm-card {
     background-color: #fff;
     border-radius: 16px;
@@ -337,4 +338,94 @@ input:focus {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+}
+
+.calendar-header {
+    color: rgba(74, 81, 97, 0.6);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.calendar-days {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
+    overflow: auto;
+    padding: 8px 0;
+    scrollbar-width: none;
+}
+.calendar-days::-webkit-scrollbar {
+    display: none;
+}
+
+.day {
+    align-items: center;
+    background: rgba(74, 81, 97, 0.08);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 44px;
+    justify-content: center;
+    min-width: 44px;
+    padding: 0 8px;
+    width: 44px;
+}
+
+.day-name {
+    color: rgba(74, 81, 97, 0.6);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+}
+
+.day-number {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.weekend {
+    color: rgba(255, 0, 0, 1);
+}
+
+.schedule-card {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 8px;
+    height: 86px;
+}
+
+.schedule-time {
+    font-weight: 600;
+    min-width: 100px;
+    height: 20px;
+    color: rgba(1, 102, 255, 1);
+}
+
+.schedule-description {
+    width: 100%;
+}
+
+.schedule-description h2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    margin: 0 0 8px 0;
+}
+
+.schedule-info {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(74, 81, 97, 0.6);
 }
