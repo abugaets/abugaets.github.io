@@ -18,6 +18,7 @@ body {
     width: 400px;
     height: 100vh;
     overflow: auto;
+    padding-bottom: 16px;
 }
 
 header {
@@ -140,6 +141,7 @@ header {
     margin: 0 0 16px 0;
 }
 
+.card,
 .programm-card {
     background-color: #fff;
     border-radius: 16px;
@@ -172,6 +174,53 @@ header {
 .programm-card-price {
     font-size: 20px;
     font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+}
+
+.card h2 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0 0 8px 0;
+}
+
+.price-b {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+}
+
+.info-cards-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-card {
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.purple {
+    background: rgba(108, 82, 255, 1);
+}
+
+.green {
+    background: rgba(110, 202, 29, 1);
+}
+
+.info-card h1 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 4px 0;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.info-card h2 {
+    font-size: 24px;
+    font-weight: 400;
     line-height: 32px;
     margin: 0;
+    color: rgba(255, 255, 255, 1);
 }
